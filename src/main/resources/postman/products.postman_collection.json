@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "6fdfdb38-8bf9-43df-83cc-eaa91e28d848",
+		"name": "products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2806250"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"code\": \"D\",\r\n        \"name\": \"name 4\",\r\n        \"description\": \"description\",\r\n        \"price\": 2.0,\r\n        \"quantity\": 3,\r\n        \"inventoryStatus\": \"inventory\",\r\n        \"category\": \"categorie 1\",\r\n        \"image\": \"image\",\r\n        \"rating\": 5.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				},
+				"description": "return all products"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"1"
+					]
+				},
+				"description": "get the product id=1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"code\": \"D\",\r\n        \"name\": \"name 1\",\r\n        \"description\": \"description\",\r\n        \"price\": 2.0,\r\n        \"quantity\": 3,\r\n        \"inventoryStatus\": \"inventory\",\r\n        \"category\": \"categorie 1\",\r\n        \"image\": \"image\",\r\n        \"rating\": 5.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				},
+				"description": "save product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"code\": \"D\",\r\n        \"name\": \"name 4\",\r\n        \"description\": \"description\",\r\n        \"price\": 2.0,\r\n        \"quantity\": 3,\r\n        \"inventoryStatus\": \"inventory\",\r\n        \"category\": \"categorie 1\",\r\n        \"image\": \"image\",\r\n        \"rating\": 5.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				},
+				"description": "update product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"code\": \"D\",\r\n        \"name\": \"name 4\",\r\n        \"description\": \"description\",\r\n        \"price\": 2.0,\r\n        \"quantity\": 3,\r\n        \"inventoryStatus\": \"inventory\",\r\n        \"category\": \"categorie 1\",\r\n        \"image\": \"image\",\r\n        \"rating\": 5.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"4"
+					]
+				},
+				"description": "delete product"
+			},
+			"response": []
+		}
+	]
+}
